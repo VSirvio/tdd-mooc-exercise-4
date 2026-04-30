@@ -8,4 +8,11 @@ describe("Gilded Rose", () => {
     const items = gildedRose.updateQuality();
     expect(items).to.deep.equal([{ name: "foo", sellIn: -1, quality: 1 }]);
   });
+
+  test("Backstage passes to a TAFKAL80ETC concert", () => {
+    const itemName = "Backstage passes to a TAFKAL80ETC concert";
+    const gildedRose = new Shop([new Item(itemName, 0, 0)]);
+    const items = gildedRose.updateQuality();
+    expect(items).to.deep.equal([{ name: itemName, sellIn: -1, quality: 0 }]);
+  });
 });
