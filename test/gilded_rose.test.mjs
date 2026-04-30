@@ -15,4 +15,9 @@ describe("Gilded Rose", () => {
     const items = gildedRose.updateQuality();
     expect(items).to.deep.equal([{ name: itemName, sellIn: -1, quality: 0 }]);
   });
+
+  test("default argument", () => {
+    const gildedRose = new Shop();
+    expect(gildedRose.items).to.be.empty;
+  });
 });
