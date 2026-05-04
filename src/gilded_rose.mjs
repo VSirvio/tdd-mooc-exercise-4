@@ -28,6 +28,8 @@ export class Shop {
           item.quality += 1;
         }
       } else if (item.name === BACKSTAGE_PASSES) {
+        const originalQuality = item.quality;
+
         if (item.quality < 50) {
           item.quality++;
 
