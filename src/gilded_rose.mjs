@@ -21,9 +21,7 @@ export class Shop {
         continue;
       }
 
-      if (item.name !== SULFURAS) {
-        item.sellIn -= 1;
-      }
+      item.sellIn -= 1;
 
       if (item.name === AGED_BRIE) {
         if (item.sellIn < 0) {
