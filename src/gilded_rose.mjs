@@ -24,7 +24,7 @@ export class Shop {
           item.quality++;
           if (item.name === BACKSTAGE_PASSES) {
             if (item.sellIn < 11) {
-              if (this.items[i].quality < 50) {
+              if (item.quality < 50) {
                 this.items[i].quality++;
               }
             }
