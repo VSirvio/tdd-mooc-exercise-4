@@ -42,6 +42,7 @@ export class Shop {
       if (this.items[i].name != SULFURAS) {
         this.items[i].sellIn--;
       }
+
       if (this.items[i].sellIn < 0) {
         if (this.items[i].name === AGED_BRIE) {
           if (this.items[i].quality < 50) {
