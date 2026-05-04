@@ -39,6 +39,7 @@ export class Shop {
       if (item.name === AGED_BRIE) {
         if (item.sellIn < 0) {
           item.quality += 2;
+          changeAmount *= 2;
         } else {
           item.quality += 1;
         }
