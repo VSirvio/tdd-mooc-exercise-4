@@ -46,7 +46,7 @@ export class Shop {
         item.sellIn--;
       }
 
-      if (this.items[i].sellIn < 0) {
+      if (item.sellIn < 0) {
         if (this.items[i].name === AGED_BRIE) {
           if (this.items[i].quality < 50) {
             this.items[i].quality++;
