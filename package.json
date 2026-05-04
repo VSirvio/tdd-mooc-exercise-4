@@ -9,6 +9,7 @@
     "@stryker-mutator/vitest-runner": "^8.0.0",
     "c8": "^8.0.1",
     "chai": "^4.3.10",
+    "chokidar": "^5.0.0",
     "prettier": "^3.1.1",
     "stryker-cli": "^1.0.2",
     "vite": "^5.0.10",
@@ -21,6 +22,7 @@
   "scripts": {
     "test": "vitest run",
     "autotest": "vitest watch",
+    "tcr": "node tcr.mjs",
     "coverage": "c8 npm run test",
     "mutation": "stryker run",
     "format": "prettier --write ."
