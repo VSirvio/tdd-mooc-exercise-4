@@ -47,7 +47,7 @@ export class Shop {
         if (item.sellIn < 0) {
           item.quality = 0;
         }
-      } else if (item.name !== SULFURAS) {
+      } else if (![AGED_BRIE, BACKSTAGE_PASSES, SULFURAS].includes(item.name)) {
         if (item.quality > 0) {
           item.quality--;
         }
