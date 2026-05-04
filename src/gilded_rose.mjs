@@ -42,7 +42,7 @@ export class Shop {
       } else if (![AGED_BRIE, BACKSTAGE_PASSES, SULFURAS].includes(item.name)) {
         const originalQuality = item.quality;
 
-        if (item.quality > 0) {
+        if (originalQuality > 0) {
           item.quality--;
         }
 
