@@ -20,7 +20,7 @@ export class Shop {
       const item = this.items[i];
 
       if (item.name === AGED_BRIE || item.name === BACKSTAGE_PASSES) {
-        if (this.items[i].quality < 50) {
+        if (item.quality < 50) {
           this.items[i].quality++;
           if (this.items[i].name === BACKSTAGE_PASSES) {
             if (this.items[i].sellIn < 11) {
