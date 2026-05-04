@@ -36,7 +36,7 @@ export class Shop {
             }
           }
         }
-      } else if (this.items[i].name !== SULFURAS) {
+      } else if (item.name !== SULFURAS) {
         if (this.items[i].quality > 0) {
           this.items[i].quality--;
         }
