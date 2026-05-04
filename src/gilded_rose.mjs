@@ -1,4 +1,5 @@
 const AGED_BRIE = "Aged Brie";
+const BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
 
 export class Item {
   constructor(name, sellIn, quality) {
