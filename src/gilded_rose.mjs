@@ -18,7 +18,7 @@ export class Shop {
   updateQuality() {
     for (const item of this.items) {
       if (item.name !== SULFURAS) {
-        item.sellIn--;
+        item.sellIn -= 1;
       }
 
       if (item.name === AGED_BRIE) {
