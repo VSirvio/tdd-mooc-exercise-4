@@ -56,14 +56,12 @@ export class Shop {
           item.quality += 1;
         }
       } else {
-        if (item.quality > 0) {
           if (item.sellIn < 0) {
             item.quality -= 2;
             changeAmount *= 2;
           } else {
             item.quality -= 1;
           }
-        }
       }
 
       item.quality = originalQuality + changeAmount;
