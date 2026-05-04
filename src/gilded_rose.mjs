@@ -31,6 +31,9 @@ export class Shop {
       let changeAmount = 1;
 
       if (item.name === AGED_BRIE) {
+      }
+
+      if (item.name === AGED_BRIE) {
         if (item.sellIn < 0) {
           item.quality += 2;
         } else {
