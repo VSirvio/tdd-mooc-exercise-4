@@ -23,7 +23,7 @@ export class Shop {
 
       if (item.name === AGED_BRIE) {
         if (item.sellIn < 0) {
-          if (item.quality < 49) {
+          if (item.quality < 48 || item.quality === 48 ) {
             item.quality += 2;
           } else if (item.quality === 49) {
             item.quality = 50;
