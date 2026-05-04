@@ -50,6 +50,10 @@ export class Shop {
         }
       }
 
+      if (item.name.includes("Conjured")) {
+        changeAmount *= 2;
+      }
+
       item.quality += changeAmount;
 
       if (item.quality > 50) {
