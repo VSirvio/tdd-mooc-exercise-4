@@ -43,7 +43,6 @@ export class Shop {
           item.quality += 3;
           changeAmount *= 3;
         } else if (item.sellIn < 10) {
-          item.quality += 2;
           changeAmount *= 2;
         }
       } else {
