@@ -51,7 +51,7 @@ export class Shop {
           if (item.quality < 50) {
             item.quality++;
           }
-        } else if (this.items[i].name === BACKSTAGE_PASSES) {
+        } else if (item.name === BACKSTAGE_PASSES) {
           this.items[i].quality = 0;
         } else if (this.items[i].name !== SULFURAS) {
           if (this.items[i].quality > 0) {
