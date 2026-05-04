@@ -44,10 +44,10 @@ export class Shop {
 
         if (originalQuality > 0) {
           item.quality--;
-        }
 
-        if (item.sellIn < 0 && originalQuality > 0) {
-          item.quality--;
+          if (item.sellIn < 0 && originalQuality > 0) {
+            item.quality--;
+          }
         }
       }
     }
