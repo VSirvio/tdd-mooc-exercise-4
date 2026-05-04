@@ -19,7 +19,24 @@ export class Shop {
     for (let i = 0; i < this.items.length; i++) {
       const item = this.items[i];
 
-      if (item.name === AGED_BRIE || item.name === BACKSTAGE_PASSES) {
+      if (item.name === AGED_BRIE) {
+        if (item.quality < 50) {
+          item.quality++;
+          if (item.name === BACKSTAGE_PASSES) {
+            if (item.sellIn < 11) {
+              if (item.quality < 50) {
+                item.quality++;
+              }
+            }
+
+            if (item.sellIn < 6) {
+              if (item.quality < 50) {
+                item.quality++;
+              }
+            }
+          }
+        }
+      } else if (item.name === BACKSTAGE_PASSES) {
         if (item.quality < 50) {
           item.quality++;
           if (item.name === BACKSTAGE_PASSES) {
