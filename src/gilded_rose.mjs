@@ -36,8 +36,6 @@ export class Shop {
         changeAmount = 0;
       }
 
-      const originalQuality = item.quality;
-
       if (item.name === BACKSTAGE_PASSES) {
         if (item.sellIn < 5) {
           changeAmount *= 3;
