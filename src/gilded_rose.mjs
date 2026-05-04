@@ -45,7 +45,7 @@ export class Shop {
         if (item.sellIn < 0 && originalQuality > 0) {
           item.quality -= 2;
         } else if (originalQuality > 0) {
-          item.quality--;
+          item.quality -= 1;
         }
       }
     }
