@@ -19,6 +19,10 @@ export class Shop {
     for (let i = 0; i < this.items.length; i++) {
       const item = this.items[i];
 
+      if (item.name !== SULFURAS) {
+        item.sellIn--;
+      }
+
       if (item.name === AGED_BRIE) {
         if (item.quality < 50) {
           item.quality++;
@@ -27,13 +31,13 @@ export class Shop {
         if (item.quality < 50) {
           item.quality++;
 
-          if (item.sellIn < 11) {
+          if (item.sellIn < 10) {
             if (item.quality < 50) {
               item.quality++;
             }
           }
 
-          if (item.sellIn < 6) {
+          if (item.sellIn < 5) {
             if (item.quality < 50) {
               item.quality++;
             }
@@ -43,10 +47,6 @@ export class Shop {
         if (item.quality > 0) {
           item.quality--;
         }
-      }
-
-      if (item.name !== SULFURAS) {
-        item.sellIn--;
       }
 
       if (item.sellIn < 0) {
