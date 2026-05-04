@@ -31,6 +31,7 @@ export class Shop {
       let changeAmount = 1;
 
       if (item.name === AGED_BRIE) {
+        changeAmount = -1;
       }
 
       if (item.name === AGED_BRIE) {
