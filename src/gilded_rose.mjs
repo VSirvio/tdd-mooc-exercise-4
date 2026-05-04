@@ -27,6 +27,12 @@ export class Shop {
         if (item.quality < 50) {
           item.quality++;
         }
+
+        if (item.sellIn < 0) {
+          if (item.quality < 50) {
+            item.quality++;
+          }
+        }
       } else if (item.name === BACKSTAGE_PASSES) {
         if (item.quality < 50) {
           item.quality++;
@@ -50,13 +56,9 @@ export class Shop {
       }
 
       if (item.sellIn < 0) {
-        if (item.name === AGED_BRIE) {
-          if (item.quality < 50) {
-            item.quality++;
-          }
-        } else if (item.name === BACKSTAGE_PASSES) {
+        if (item.name === BACKSTAGE_PASSES) {
           item.quality = 0;
-        } else if (item.name !== SULFURAS) {
+        } else if (item.name !== AGED_BRIE && item.name !== SULFURAS) {
           if (item.quality > 0) {
             item.quality--;
           }
