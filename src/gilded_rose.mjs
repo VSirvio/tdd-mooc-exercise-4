@@ -38,7 +38,7 @@ export class Shop {
         }
       } else if (item.name !== SULFURAS) {
         if (item.quality > 0) {
-          this.items[i].quality--;
+          item.quality--;
         }
       }
 
