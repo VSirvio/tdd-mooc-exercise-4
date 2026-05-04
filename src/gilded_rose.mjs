@@ -35,7 +35,7 @@ export class Shop {
         } else if (item.sellIn < 10 && originalQuality < 49) {
           item.quality += 2;
         } else if (originalQuality < 50) {
-          item.quality++;
+          item.quality += 1;
         }
 
         if (item.sellIn < 0) {
