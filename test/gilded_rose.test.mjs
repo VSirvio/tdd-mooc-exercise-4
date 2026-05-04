@@ -79,4 +79,11 @@ describe("Gilded Rose", () => {
     const itemAfter = newItem({ sellIn: 0, quality: 50, name });
     expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
   });
+
+  test("Aged Brie with sellIn 0, quality 50", () => {
+    const name = "Aged Brie";
+    const itemBefore = newItem({ sellIn: 0, quality: 50, name });
+    const itemAfter = newItem({ sellIn: -1, quality: 50, name });
+    expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
+  });
 });
