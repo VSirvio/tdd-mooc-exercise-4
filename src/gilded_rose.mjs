@@ -66,6 +66,8 @@ export class Shop {
         }
       }
 
+      item.quality = originalQuality + changeAmount;
+
       if (item.quality > 50) {
         item.quality = 50;
       }
