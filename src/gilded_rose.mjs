@@ -34,7 +34,7 @@ export class Shop {
         changeAmount = 1;
       } else {
         if (item.quality < 1) {
-        changeAmount = 0;
+          changeAmount = 0;
         }
       }
 
