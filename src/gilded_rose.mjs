@@ -34,7 +34,7 @@ export class Shop {
       } else if (item.name === BACKSTAGE_PASSES) {
         if (item.sellIn < 0) {
           item.quality = 0;
-        } else if (item.sellIn < 5 && item.quality < 48) {
+        } else if (item.sellIn < 5) {
           item.quality += 3;
         } else if (item.sellIn < 10) {
           item.quality += 2;
