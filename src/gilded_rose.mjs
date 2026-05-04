@@ -16,9 +16,7 @@ export class Shop {
   }
 
   updateQuality() {
-    for (let i = 0; i < this.items.length; i++) {
-      const item = this.items[i];
-
+    for (const item of this.items) {
       if (item.name !== SULFURAS) {
         item.sellIn--;
       }
