@@ -1,3 +1,5 @@
+const AGED_BRIE = "Aged Brie";
+
 export class Item {
   constructor(name, sellIn, quality) {
     this.name = name;
