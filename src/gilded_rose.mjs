@@ -19,7 +19,7 @@ export class Shop {
     for (let i = 0; i < this.items.length; i++) {
       const item = this.items[i];
 
-      if (this.items[i].name === AGED_BRIE || this.items[i].name === BACKSTAGE_PASSES) {
+      if (item.name === AGED_BRIE || this.items[i].name === BACKSTAGE_PASSES) {
         if (this.items[i].quality < 50) {
           this.items[i].quality++;
           if (this.items[i].name === BACKSTAGE_PASSES) {
