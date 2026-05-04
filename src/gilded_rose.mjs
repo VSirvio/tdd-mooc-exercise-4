@@ -38,7 +38,7 @@ export class Shop {
           this.items[i].quality--;
         }
       }
-      if (this.items[i].name != "Sulfuras, Hand of Ragnaros") {
+      if (this.items[i].name != SULFURAS) {
         this.items[i].sellIn--;
       }
       if (this.items[i].sellIn < 0) {
