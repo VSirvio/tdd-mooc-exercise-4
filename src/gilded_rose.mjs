@@ -17,6 +17,10 @@ export class Shop {
 
   updateQuality() {
     for (const item of this.items) {
+      if (item.name === SULFURAS) {
+        continue;
+      }
+
       if (item.name !== SULFURAS) {
         item.sellIn -= 1;
       }
