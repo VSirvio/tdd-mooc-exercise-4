@@ -37,4 +37,11 @@ describe("Gilded Rose", () => {
     const itemAfter = newItem({ sellIn: 0, quality: 3, name });
     expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
   });
+
+  test("Sulfuras, Hand of Ragnaros with sellIn -1, quality 1", () => {
+    const name = "Sulfuras, Hand of Ragnaros";
+    const itemBefore = newItem({ sellIn: -1, quality: 1, name });
+    const itemAfter = newItem({ sellIn: -1, quality: 1, name });
+    expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
+  });
 });
