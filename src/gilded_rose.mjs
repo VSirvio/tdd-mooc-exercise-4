@@ -49,7 +49,7 @@ export class Shop {
       if (item.sellIn < 0) {
         if (item.name === AGED_BRIE) {
           if (item.quality < 50) {
-            this.items[i].quality++;
+            item.quality++;
           }
         } else if (this.items[i].name === BACKSTAGE_PASSES) {
           this.items[i].quality = 0;
