@@ -24,7 +24,7 @@ export class Shop {
       if (item.name === AGED_BRIE) {
         const originalQuality = item.quality;
 
-        if (item.quality < 50) {
+        if (originalQuality < 50) {
           item.quality++;
         }
 
