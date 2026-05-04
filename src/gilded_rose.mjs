@@ -41,6 +41,10 @@ export class Shop {
         } else if (item.quality < 50) {
           item.quality += 1;
         }
+
+        if (item.quality > 50) {
+          item.quality = 50;
+        }
       } else if (![AGED_BRIE, BACKSTAGE_PASSES, SULFURAS].includes(item.name)) {
         if (item.sellIn < 0 && item.quality > 0) {
           item.quality -= 2;
