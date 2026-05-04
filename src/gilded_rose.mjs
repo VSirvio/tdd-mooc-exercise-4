@@ -26,17 +26,16 @@ export class Shop {
       } else if (item.name === BACKSTAGE_PASSES) {
         if (item.quality < 50) {
           item.quality++;
-          if (item.name === BACKSTAGE_PASSES) {
-            if (item.sellIn < 11) {
-              if (item.quality < 50) {
-                item.quality++;
-              }
-            }
 
-            if (item.sellIn < 6) {
-              if (item.quality < 50) {
-                item.quality++;
-              }
+          if (item.sellIn < 11) {
+            if (item.quality < 50) {
+              item.quality++;
+            }
+          }
+
+          if (item.sellIn < 6) {
+            if (item.quality < 50) {
+              item.quality++;
             }
           }
         }
