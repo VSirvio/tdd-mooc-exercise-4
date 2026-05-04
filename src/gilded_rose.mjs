@@ -24,6 +24,7 @@ export class Shop {
       item.sellIn -= 1;
 
       if (item.name === BACKSTAGE_PASSES && item.sellIn < 0) {
+        item.quality = 0;
       }
 
       let changeAmount = 1;
