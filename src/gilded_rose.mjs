@@ -32,6 +32,8 @@ export class Shop {
 
       if (item.name === AGED_BRIE || item.name === BACKSTAGE_PASSES) {
         changeAmount = 1;
+      } else if (item.quality < 1) {
+        changeAmount = 0;
       }
 
       const originalQuality = item.quality;
