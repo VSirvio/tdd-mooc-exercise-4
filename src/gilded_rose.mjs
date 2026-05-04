@@ -30,7 +30,7 @@ export class Shop {
       } else if (item.name === BACKSTAGE_PASSES) {
         const originalQuality = item.quality;
 
-        if (item.quality < 50) {
+        if (originalQuality < 50) {
           item.quality++;
 
           if (item.sellIn < 10 && item.quality < 50) {
