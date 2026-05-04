@@ -46,11 +46,9 @@ export class Shop {
           }
         } else if (this.items[i].name === "Backstage passes to a TAFKAL80ETC concert") {
           this.items[i].quality = 0;
-        } else {
-          if (this.items[i].name != "Sulfuras, Hand of Ragnaros") {
-            if (this.items[i].quality > 0) {
-              this.items[i].quality--;
-            }
+        } else if (this.items[i].name !== "Sulfuras, Hand of Ragnaros") {
+          if (this.items[i].quality > 0) {
+            this.items[i].quality--;
           }
         }
       }
