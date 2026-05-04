@@ -23,4 +23,11 @@ describe("Gilded Rose", () => {
     const gildedRose = new Shop();
     expect(gildedRose.items).to.be.empty;
   });
+
+  test("Aged Brie with sellIn 0, quality 0", () => {
+    const name = "Aged Brie";
+    const itemBefore = newItem({ sellIn: 0, quality: 0, name });
+    const itemAfter = newItem({ sellIn: -1, quality: 2, name });
+    expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
+  });
 });
