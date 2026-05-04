@@ -48,7 +48,7 @@ export class Shop {
           }
         } else if (this.items[i].name === BACKSTAGE_PASSES) {
           this.items[i].quality = 0;
-        } else if (this.items[i].name !== "Sulfuras, Hand of Ragnaros") {
+        } else if (this.items[i].name !== SULFURAS) {
           if (this.items[i].quality > 0) {
             this.items[i].quality--;
           }
