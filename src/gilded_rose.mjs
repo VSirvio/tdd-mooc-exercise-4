@@ -49,6 +49,10 @@ export class Shop {
             }
           }
         }
+
+        if (item.sellIn < 0) {
+          item.quality = 0;
+        }
       } else if (item.name !== SULFURAS) {
         if (item.quality > 0) {
           item.quality--;
@@ -56,9 +60,7 @@ export class Shop {
       }
 
       if (item.sellIn < 0) {
-        if (item.name === BACKSTAGE_PASSES) {
-          item.quality = 0;
-        } else if (item.name !== AGED_BRIE && item.name !== SULFURAS) {
+        if (item.name !== AGED_BRIE && item.name !== BACKSTAGE_PASSES && item.name !== SULFURAS) {
           if (item.quality > 0) {
             item.quality--;
           }
