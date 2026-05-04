@@ -38,14 +38,7 @@ export class Shop {
 
       const originalQuality = item.quality;
 
-      if (item.name === AGED_BRIE) {
-        if (item.sellIn < 0) {
-          item.quality += 2;
-          changeAmount *= 2;
-        } else {
-          item.quality += 1;
-        }
-      } else if (item.name === BACKSTAGE_PASSES) {
+      if (item.name === BACKSTAGE_PASSES) {
         if (item.sellIn < 5) {
           item.quality += 3;
           changeAmount *= 3;
