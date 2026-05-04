@@ -5,14 +5,14 @@ import { Item, Shop } from "../src/gilded_rose.mjs";
 const newItem = obj => new Item(obj.name, obj.sellIn, obj.quality);
 
 describe("Gilded Rose", () => {
-  test("foo", () => {
+  test("foo with sellIn 0, quality 3", () => {
     const name = "foo";
     const itemBefore = newItem({ sellIn: 0, quality: 3, name });
     const itemAfter = newItem({ sellIn: -1, quality: 1, name });
     expect(new Shop([itemBefore]).updateQuality()).to.deep.equal([itemAfter]);
   });
 
-  test("Backstage passes to a TAFKAL80ETC concert", () => {
+  test("Backstage passes with sellIn 0, quality 0", () => {
     const name = "Backstage passes to a TAFKAL80ETC concert";
     const itemBefore = newItem({ sellIn: 0, quality: 0, name });
     const itemAfter = newItem({ sellIn: -1, quality: 0, name });
