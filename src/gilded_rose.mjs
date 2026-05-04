@@ -30,7 +30,7 @@ export class Shop {
 
       let changeAmount = -1;
 
-      if (item.name === AGED_BRIE) {
+      if (item.name === AGED_BRIE || item.name === BACKSTAGE_PASSES) {
         changeAmount = 1;
       }
 
