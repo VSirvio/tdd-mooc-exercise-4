@@ -45,7 +45,7 @@ export class Shop {
           if (this.items[i].quality < 50) {
             this.items[i].quality++;
           }
-        } else if (this.items[i].name === "Backstage passes to a TAFKAL80ETC concert") {
+        } else if (this.items[i].name === BACKSTAGE_PASSES) {
           this.items[i].quality = 0;
         } else if (this.items[i].name !== "Sulfuras, Hand of Ragnaros") {
           if (this.items[i].quality > 0) {
